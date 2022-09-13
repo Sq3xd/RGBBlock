@@ -22,7 +22,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BRGBMod.MOD_ID);
 
     public static final RegistryObject<Block> RGB_BLOCK = BLOCKS.register("rgb_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(6f).destroyTime(1.29f)
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(6f).destroyTime(1.25f)
                     .speedFactor(1.25f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Item> RGB_BLOCK_ITEM = ITEMS.register("rgb_block",
