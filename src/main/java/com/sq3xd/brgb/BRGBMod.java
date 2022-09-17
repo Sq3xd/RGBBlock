@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.sq3xd.brgb.block.ModBlocks;
 import net.minecraft.util.profiling.jfr.event.WorldLoadFinishedEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -27,8 +28,8 @@ public class BRGBMod
     }
 
     @SubscribeEvent
-    public void onWorldLoaded(WorldLoadFinishedEvent event)
+    public void onServerStarted(ServerStartingEvent event)
     {
-        LOGGER.info("Successfully loaded world with RGB Block mod!");
+        LOGGER.info("Successfully started server with RGB Block mod!");
     }
 }
