@@ -5,10 +5,10 @@
       "item": "brgb:rgb_block"
     },
     {
-      "item": "minecraft:lever"
+      "tag": "forge:dusts/redstone"
     }
   ],
   "result": {
-    "item": "brgb:rgb_block_switchable"
+    "item": "brgb:rgb_block_redstone"
   }
 }

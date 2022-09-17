@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "brgb:rgb_block",
-    "brgb:rgb_block_switchable"
+    "brgb:rgb_block_switchable",
+    "brgb:rgb_block_redstone"
   ]
 }

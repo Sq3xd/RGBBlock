@@ -1,4 +1,5 @@
 {
   "block.brgb.rgb_block": "RGB Block",
-  "block.brgb.rgb_block_switchable": "RGB Block Switchable"
+  "block.brgb.rgb_block_switchable": "RGB Block Switchable",
+  "block.brgb.rgb_block_redstone": "RGB Block Redstone"
 }
