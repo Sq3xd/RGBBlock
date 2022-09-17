@@ -1,5 +1,9 @@
 {
   "block.brgb.rgb_block": "RGB Block",
   "block.brgb.rgb_block_switchable": "RGB Block Switchable",
-  "block.brgb.rgb_block_redstone": "RGB Block Redstone"
+  "block.brgb.rgb_block_redstone": "RGB Block Redstone",
+
+  "gui.jei.description.rgb_block": "It's just a RGB block, nothing special",
+  "gui.jei.description.rgb_block_switchable": "It's a RGB block, but you can turn it of or on by using redstone",
+  "gui.jei.description.rgb_block_redstone": "It's a RGB block, but it's emit redstone power"
 }

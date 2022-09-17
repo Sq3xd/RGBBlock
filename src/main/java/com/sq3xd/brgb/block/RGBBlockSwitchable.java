@@ -16,7 +16,7 @@ import java.util.Random;
 public class RGBBlockSwitchable extends Block {
     public static final BooleanProperty LIT = RedstoneTorchBlock.LIT;
 
-    public RGBBlockSwitchable(Properties properties){
+    public RGBBlockSwitchable(Properties properties) {
         super(properties);
     }
 
@@ -30,7 +30,7 @@ public class RGBBlockSwitchable extends Block {
             boolean flag = p_55666_.getValue(LIT);
             if (flag != p_55667_.hasNeighborSignal(p_55668_)) {
                 if (flag) {
-                    p_55667_.scheduleTick(p_55668_, this, 2);
+                    p_55667_.scheduleTick(p_55668_, this, 4);
                 } else {
                     p_55667_.setBlock(p_55668_, p_55666_.cycle(LIT), 2);
                 }

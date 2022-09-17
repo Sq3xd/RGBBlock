@@ -17,29 +17,35 @@ import java.util.function.ToIntFunction;
 
 
 public class ModBlocks {
-    public static ToIntFunction<BlockState> lightLevel = BlockState -> 5;
+    public static ToIntFunction<BlockState> lightLevel = BlockState -> 5; // Light level
+    public static final float speed = 1.25f; // Faster than default
+    public static final float destroy_time = 1.25f; // Faster than stone
+    public static final float resistance = 6f; // Stone resistance
+
+     // Adding blocks and items
+
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BRGBMod.MOD_ID);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BRGBMod.MOD_ID);
 
     public static final RegistryObject<Block> RGB_BLOCK = BLOCKS.register("rgb_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(6f).destroyTime(1.25f)
-                    .speedFactor(1.25f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Item> RGB_BLOCK_ITEM = ITEMS.register("rgb_block",
             () -> new BlockItem(RGB_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
 
     public static final RegistryObject<Block> RGB_BLOCK_SWITCHABLE = BLOCKS.register("rgb_block_switchable",
-            () -> new RGBBlockSwitchable(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(6f).destroyTime(1.25f)
-                    .speedFactor(1.25f).requiresCorrectToolForDrops()));
+            () -> new RGBBlockSwitchable(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Item> RGB_BLOCK_SWITCHABLE_ITEM = ITEMS.register("rgb_block_switchable",
             () -> new BlockItem(RGB_BLOCK_SWITCHABLE.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
 
     public static final RegistryObject<Block> RGB_BLOCK_REDSTONE = BLOCKS.register("rgb_block_redstone",
-            () -> new RGBBlockRedstone(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(6f).destroyTime(1.25f)
-                    .speedFactor(1.25f).requiresCorrectToolForDrops()));
+            () -> new RGBBlockRedstone(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Item> RGB_BLOCK_REDSTONE_ITEM = ITEMS.register("rgb_block_redstone",
             () -> new BlockItem(RGB_BLOCK_REDSTONE.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
