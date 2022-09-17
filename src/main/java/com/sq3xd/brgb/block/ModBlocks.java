@@ -29,6 +29,14 @@ public class ModBlocks {
             () -> new BlockItem(RGB_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
 
+    public static final RegistryObject<Block> RGB_BLOCK_SWITCHABLE = BLOCKS.register("rgb_block_switchable",
+            () -> new RGBBlockSwitchable(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(6f).destroyTime(1.25f)
+                    .speedFactor(1.25f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> RGB_BLOCK_SWITCHABLE_ITEM = ITEMS.register("rgb_block_switchable",
+            () -> new BlockItem(RGB_BLOCK_SWITCHABLE.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
         BLOCKS.register(eventBus);

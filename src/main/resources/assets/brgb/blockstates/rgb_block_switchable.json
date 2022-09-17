@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "brgb:block/rgb_block"
+    },
+    "lit=true": {
+      "model": "brgb:block/rgb_block_switchable"
+    }
+  }
+}
