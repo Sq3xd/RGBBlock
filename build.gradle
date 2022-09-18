@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 
-version = '1.4-B'
+version = '1.5'
 group = 'com.sq3xd.brgb' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'brgb'
 
