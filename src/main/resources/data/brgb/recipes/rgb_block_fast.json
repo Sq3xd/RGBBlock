@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "brgb:rgb_block"
+    }
+  ],
+  "result": {
+    "item": "brgb:rgb_block_fast"
+  }
+}

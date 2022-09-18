@@ -3,6 +3,8 @@
   "values": [
     "brgb:rgb_block",
     "brgb:rgb_block_switchable",
-    "brgb:rgb_block_redstone"
+    "brgb:rgb_block_redstone",
+    "brgb:rgb_block_slow",
+    "brgb:rgb_block_fast"
   ]
 }
