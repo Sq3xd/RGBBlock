@@ -36,7 +36,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> RGB_BLOCK_FAST = BLOCKS.register("rgb_block_fast",
-            () -> new RGBBlockRedstone(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
                     .speedFactor(speed).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Item> RGB_BLOCK_FAST_ITEM = ITEMS.register("rgb_block_fast",
@@ -44,7 +44,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> RGB_BLOCK_SLOW = BLOCKS.register("rgb_block_slow",
-            () -> new RGBBlockRedstone(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
                     .speedFactor(speed).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Item> RGB_BLOCK_SLOW_ITEM = ITEMS.register("rgb_block_slow",
