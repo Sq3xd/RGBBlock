@@ -2,7 +2,6 @@ package com.sq3xd.brgb;
 
 import com.mojang.logging.LogUtils;
 import com.sq3xd.brgb.block.ModBlocks;
-import net.minecraft.util.profiling.jfr.event.WorldLoadFinishedEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
