@@ -3,7 +3,7 @@
   "block.brgb.rgb_block_switchable": "RGB Block Switchable",
   "block.brgb.rgb_block_redstone": "RGB Block Redstone",
   "block.brgb.rgb_block_slow": "RGB Block Slow",
-  "brgb:rgb_block_fast": "RGB Block Fast",
+  "block.brgb.rgb_block_fast": "RGB Block Fast",
 
   "gui.jei.description.rgb_block": "It's just a RGB block, nothing special",
   "gui.jei.description.rgb_block_switchable": "It's a RGB block, but you can turn it of or on by using redstone",
