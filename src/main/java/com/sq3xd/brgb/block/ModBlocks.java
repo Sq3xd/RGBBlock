@@ -18,6 +18,7 @@ import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     public static ToIntFunction<BlockState> lightLevel = BlockState -> 5; // Light level
+    public static ToIntFunction<BlockState> lightLevelSuper = BlockState -> 8; // Light level
     public static final float speed = 1.25f; // Faster than default
     public static final float destroy_time = 1.25f; // Faster than stone
     public static final float resistance = 6f; // Stone resistance
@@ -65,6 +66,20 @@ public class ModBlocks {
 
     public static final RegistryObject<Item> RGB_BLOCK_REDSTONE_ITEM = ITEMS.register("rgb_block_redstone",
             () -> new BlockItem(RGB_BLOCK_REDSTONE.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+    public static final RegistryObject<Block> RGB_BLOCK_ARMORED = BLOCKS.register("rgb_block_armored",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(8f).destroyTime(1.55f)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> RGB_BLOCK_ARMORED_ITEM = ITEMS.register("rgb_block_armored",
+            () -> new BlockItem(RGB_BLOCK_ARMORED.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+    public static final RegistryObject<Block> RGB_BLOCK_LIGHT = BLOCKS.register("rgb_block_light",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevelSuper).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> RGB_BLOCK_LIGHT_ITEM = ITEMS.register("rgb_block_light",
+            () -> new BlockItem(RGB_BLOCK_LIGHT.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
 
     public static void register(IEventBus eventBus){

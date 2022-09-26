@@ -27,8 +27,7 @@ public class BRGBMod
     }
 
     @SubscribeEvent
-    public void onServerStarted(ServerStartingEvent event)
-    {
+    public void onServerStarted(ServerStartingEvent event) {
         LOGGER.info("Successfully started server with RGB Block mod!");
     }
 }

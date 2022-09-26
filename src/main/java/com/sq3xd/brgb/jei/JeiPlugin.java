@@ -16,6 +16,8 @@ public class JeiPlugin implements IModPlugin {
     TranslatableComponent rgb_block_redstone = new TranslatableComponent("gui.jei.description.rgb_block_redstone");
     TranslatableComponent rgb_block_slow = new TranslatableComponent("gui.jei.description.rgb_block_slow");
     TranslatableComponent rgb_block_fast = new TranslatableComponent("gui.jei.description.rgb_block_fast");
+    TranslatableComponent rgb_block_armored = new TranslatableComponent("gui.jei.description.rgb_block_armored");
+    TranslatableComponent rgb_block_light = new TranslatableComponent("gui.jei.description.rgb_block_light");
 
     @Override
     public ResourceLocation getPluginUid() {
@@ -29,5 +31,7 @@ public class JeiPlugin implements IModPlugin {
         registration.addIngredientInfo(new ItemStack(ModBlocks.RGB_BLOCK_REDSTONE_ITEM.get()), VanillaTypes.ITEM_STACK, rgb_block_redstone);
         registration.addIngredientInfo(new ItemStack(ModBlocks.RGB_BLOCK_SLOW_ITEM.get()), VanillaTypes.ITEM_STACK, rgb_block_slow);
         registration.addIngredientInfo(new ItemStack(ModBlocks.RGB_BLOCK_FAST_ITEM.get()), VanillaTypes.ITEM_STACK, rgb_block_fast);
+        registration.addIngredientInfo(new ItemStack(ModBlocks.RGB_BLOCK_ARMORED_ITEM.get()), VanillaTypes.ITEM_STACK, rgb_block_armored);
+        registration.addIngredientInfo(new ItemStack(ModBlocks.RGB_BLOCK_LIGHT_ITEM.get()), VanillaTypes.ITEM_STACK, rgb_block_light);
     }
 }
