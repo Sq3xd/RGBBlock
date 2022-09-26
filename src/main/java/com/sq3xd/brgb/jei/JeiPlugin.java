@@ -5,19 +5,19 @@ import com.sq3xd.brgb.block.ModBlocks;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.registration.IRecipeRegistration;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
 @mezz.jei.api.JeiPlugin
 public class JeiPlugin implements IModPlugin {
-    TranslatableComponent rgb_block = new TranslatableComponent("gui.jei.description.rgb_block");
-    TranslatableComponent rgb_block_switchable = new TranslatableComponent("gui.jei.description.rgb_block_switchable");
-    TranslatableComponent rgb_block_redstone = new TranslatableComponent("gui.jei.description.rgb_block_redstone");
-    TranslatableComponent rgb_block_slow = new TranslatableComponent("gui.jei.description.rgb_block_slow");
-    TranslatableComponent rgb_block_fast = new TranslatableComponent("gui.jei.description.rgb_block_fast");
-    TranslatableComponent rgb_block_armored = new TranslatableComponent("gui.jei.description.rgb_block_armored");
-    TranslatableComponent rgb_block_light = new TranslatableComponent("gui.jei.description.rgb_block_light");
+    Component rgb_block = Component.translatable("gui.jei.description.rgb_block");
+    Component rgb_block_switchable = Component.translatable("gui.jei.description.rgb_block_switchable");
+    Component rgb_block_redstone = Component.translatable("gui.jei.description.rgb_block_redstone");
+    Component rgb_block_slow = Component.translatable("gui.jei.description.rgb_block_slow");
+    Component rgb_block_fast = Component.translatable("gui.jei.description.rgb_block_fast");
+    Component rgb_block_armored = Component.translatable("gui.jei.description.rgb_block_armored");
+    Component rgb_block_light =Component.translatable("gui.jei.description.rgb_block_light");
 
     @Override
     public ResourceLocation getPluginUid() {
