@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "brgb:block/full_rgb_block_fast"
+    }
+  }
+}

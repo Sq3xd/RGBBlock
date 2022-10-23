@@ -7,11 +7,25 @@
   "block.brgb.rgb_block_armored": "RGB Block Armored",
   "block.brgb.rgb_block_light": "RGB Block Light",
 
+  "block.brgb.full_rgb_block": "Full RGB Block",
+  "block.brgb.full_rgb_block_slow": "Full RGB Block Slow",
+  "block.brgb.full_rgb_block_fast": "Full RGB Block Fast",
+  "block.brgb.full_rgb_block_redstone": "Full RGB Block Redstone",
+  "block.brgb.full_rgb_block_armored": "Full RGB Block Armored",
+  "block.brgb.full_rgb_block_light": "Full RGB Block Light",
+
   "gui.jei.description.rgb_block": "It's just a RGB block, nothing special",
   "gui.jei.description.rgb_block_switchable": "It's a RGB block, but you can turn it of or on by using redstone",
+  "gui.jei.description.rgb_block_light": "It's a RGB block, but it's more lighter",
   "gui.jei.description.rgb_block_redstone": "It's a RGB block, but it's emit redstone power",
+  "gui.jei.description.rgb_block_armored": "It's a RGB block, but armored",
   "gui.jei.description.rgb_block_slow": "It's a RGB block, but slower",
   "gui.jei.description.rgb_block_fast": "It's a RGB block, but faster",
-  "gui.jei.description.rgb_block_armored": "It's a RGB block, but armored",
-  "gui.jei.description.rgb_block_light": "It's a RGB block, but it's more lighter"
+
+  "gui.jei.description.full_rgb_block": "It's a RGB block, but it's Full",
+  "gui.jei.description.full_rgb_block_light": "It's a Full RGB block, but it's more lighter",
+  "gui.jei.description.full_rgb_block_slow": "It's a Full RGB block, but slower",
+  "gui.jei.description.full_rgb_block_fast": "It's a Full RGB block, but faster",
+  "gui.jei.description.full_rgb_block_armored": "It's a Full RGB block, but armored",
+  "gui.jei.description.full_rgb_block_redstone": "It's a Full RGB block, but it's emit redstone power"
 }

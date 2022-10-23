@@ -18,7 +18,7 @@ import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     public static ToIntFunction<BlockState> lightLevel = BlockState -> 5; // Light level
-    public static ToIntFunction<BlockState> lightLevelSuper = BlockState -> 8; // Light level
+    public static ToIntFunction<BlockState> lightLevelSuper = BlockState -> 11; // Light level
     public static final float speed = 1.25f; // Faster than default
     public static final float destroy_time = 1.25f; // Faster than stone
     public static final float resistance = 6f; // Stone resistance
@@ -35,6 +35,12 @@ public class ModBlocks {
     public static final RegistryObject<Item> RGB_BLOCK_ITEM = ITEMS.register("rgb_block",
             () -> new BlockItem(RGB_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
+    public static final RegistryObject<Block> RGB_BLOCK_SLOW = BLOCKS.register("rgb_block_slow",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> RGB_BLOCK_SLOW_ITEM = ITEMS.register("rgb_block_slow",
+            () -> new BlockItem(RGB_BLOCK_SLOW.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
     public static final RegistryObject<Block> RGB_BLOCK_FAST = BLOCKS.register("rgb_block_fast",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
@@ -43,22 +49,12 @@ public class ModBlocks {
     public static final RegistryObject<Item> RGB_BLOCK_FAST_ITEM = ITEMS.register("rgb_block_fast",
             () -> new BlockItem(RGB_BLOCK_FAST.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
-
-    public static final RegistryObject<Block> RGB_BLOCK_SLOW = BLOCKS.register("rgb_block_slow",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
-                    .speedFactor(speed).requiresCorrectToolForDrops()));
-
-    public static final RegistryObject<Item> RGB_BLOCK_SLOW_ITEM = ITEMS.register("rgb_block_slow",
-            () -> new BlockItem(RGB_BLOCK_SLOW.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
-
-
     public static final RegistryObject<Block> RGB_BLOCK_SWITCHABLE = BLOCKS.register("rgb_block_switchable",
             () -> new RGBBlockSwitchable(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
                     .speedFactor(speed).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Item> RGB_BLOCK_SWITCHABLE_ITEM = ITEMS.register("rgb_block_switchable",
             () -> new BlockItem(RGB_BLOCK_SWITCHABLE.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
-
 
     public static final RegistryObject<Block> RGB_BLOCK_REDSTONE = BLOCKS.register("rgb_block_redstone",
             () -> new RGBBlockRedstone(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
@@ -68,7 +64,7 @@ public class ModBlocks {
             () -> new BlockItem(RGB_BLOCK_REDSTONE.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
     public static final RegistryObject<Block> RGB_BLOCK_ARMORED = BLOCKS.register("rgb_block_armored",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(8f).destroyTime(1.55f)
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(8f).destroyTime(1.75f)
                     .speedFactor(speed).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Item> RGB_BLOCK_ARMORED_ITEM = ITEMS.register("rgb_block_armored",
@@ -80,6 +76,48 @@ public class ModBlocks {
 
     public static final RegistryObject<Item> RGB_BLOCK_LIGHT_ITEM = ITEMS.register("rgb_block_light",
             () -> new BlockItem(RGB_BLOCK_LIGHT.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+    public static final RegistryObject<Block> FULL_RGB_BLOCK = BLOCKS.register("full_rgb_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> FULL_RGB_BLOCK_ITEM = ITEMS.register("full_rgb_block",
+            () -> new BlockItem(FULL_RGB_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+    public static final RegistryObject<Block> FULL_RGB_BLOCK_SLOW = BLOCKS.register("full_rgb_block_slow",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> FULL_RGB_BLOCK_SLOW_ITEM = ITEMS.register("full_rgb_block_slow",
+            () -> new BlockItem(FULL_RGB_BLOCK_SLOW.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+    public static final RegistryObject<Block> FULL_RGB_BLOCK_FAST = BLOCKS.register("full_rgb_block_fast",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> FULL_RGB_BLOCK_FAST_ITEM = ITEMS.register("full_rgb_block_fast",
+            () -> new BlockItem(FULL_RGB_BLOCK_FAST.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+    public static final RegistryObject<Block> FULL_RGB_BLOCK_REDSTONE = BLOCKS.register("full_rgb_block_redstone",
+            () -> new RGBBlockRedstone(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> FULL_RGB_BLOCK_REDSTONE_ITEM = ITEMS.register("full_rgb_block_redstone",
+            () -> new BlockItem(FULL_RGB_BLOCK_REDSTONE.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+    public static final RegistryObject<Block> FULL_RGB_BLOCK_ARMORED = BLOCKS.register("full_rgb_block_armored",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevel).explosionResistance(8f).destroyTime(1.75f)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> FULL_RGB_BLOCK_ARMORED_ITEM = ITEMS.register("full_rgb_block_armored",
+            () -> new BlockItem(FULL_RGB_BLOCK_ARMORED.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+    public static final RegistryObject<Block> FULL_RGB_BLOCK_LIGHT = BLOCKS.register("full_rgb_block_light",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).lightLevel(lightLevelSuper).explosionResistance(resistance).destroyTime(destroy_time)
+                    .speedFactor(speed).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Item> FULL_RGB_BLOCK_LIGHT_ITEM = ITEMS.register("full_rgb_block_light",
+            () -> new BlockItem(FULL_RGB_BLOCK_LIGHT.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
 
     public static void register(IEventBus eventBus){

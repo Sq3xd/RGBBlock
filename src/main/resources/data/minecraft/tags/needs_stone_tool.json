@@ -7,6 +7,12 @@
     "brgb:rgb_block_slow",
     "brgb:rgb_block_fast",
     "brgb:rgb_block_armored",
-    "brgb:rgb_block_light"
+    "brgb:rgb_block_light",
+    "brgb:full_rgb_block",
+    "brgb:full_rgb_block_slow",
+    "brgb:full_rgb_block_fast",
+    "brgb:full_rgb_block_light",
+    "brgb:full_rgb_block_redstone",
+    "brgb:full_rgb_block_armored"
   ]
 }
